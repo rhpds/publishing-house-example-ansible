@@ -3,14 +3,14 @@
 # The orchestrator reads and updates it every session.
 
 project:
-  name: ""          # Project name (e.g., "Getting Started with OpenShift")
+  name: "Ansible Edge Automation Lab"
   id: ""            # Short identifier (e.g., "ocp-getting-started")
-  created: ""       # ISO 8601 date (YYYY-MM-DD)
+  created: "2026-06-29"
   owner_github: ""  # GitHub username (e.g., "jsmith")
-  owner_email: ""   # Red Hat SSO email (e.g., "jsmith@redhat.com")
+  owner_email: "nstephan@redhat.com"
   type: ""          # workshop | demo
   showroom_type: ""  # classic | zero_touch
-  deployment_mode: ""  # rhdp_published | self_published
+  deployment_mode: "rhdp_published"
   autonomy: guided  # guided | assisted | autonomous
 
 lifecycle:
@@ -90,4 +90,5 @@ lifecycle:
 
 integrations:
   jira:
-    enabled: false
+    enabled: true
+    initiative_key: "RHDPCD-2"
