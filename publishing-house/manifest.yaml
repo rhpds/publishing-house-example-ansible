@@ -49,7 +49,7 @@ lifecycle:
         - "Added credential management coverage to Module 1"
         - "Fixed module independence — removed cross-module references in prerequisites"
         - "Added rolling update scaling framing to Module 3"
-        - "Pinned AAP version to 2.5"
+        - "Set AAP version to 2.6"
     approval:
       status: pending
       approved_by: null

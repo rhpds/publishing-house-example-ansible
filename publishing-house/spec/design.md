@@ -26,7 +26,7 @@ Workshop (hands-on)
 
 ## Products & Technologies
 
-- Red Hat Ansible Automation Platform 2.5
+- Red Hat Ansible Automation Platform 2.6
 - Event-Driven Ansible
 - Red Hat Enterprise Linux 9 (edge devices)
 - Red Hat OpenShift (AAP deployment platform)
