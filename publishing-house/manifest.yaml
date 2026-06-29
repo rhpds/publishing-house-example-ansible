@@ -92,3 +92,4 @@ integrations:
   jira:
     enabled: true
     initiative_key: "RHDPCD-2"
+    epic_key: "RHDPCD-121"
