@@ -14,7 +14,7 @@ project:
   autonomy: guided
 
 lifecycle:
-  current_phase: spec_refinement
+  current_phase: writing
   phases:
     intake:
       status: completed
@@ -51,9 +51,9 @@ lifecycle:
         - "Added rolling update scaling framing to Module 3"
         - "Set AAP version to 2.6"
     approval:
-      status: pending
-      approved_by: null
-      completed_at: null
+      status: completed
+      approved_by: "spec-reviewer"
+      completed_at: "2026-06-29T16:00:00Z"
     writing:
       status: pending
       assignees: []
