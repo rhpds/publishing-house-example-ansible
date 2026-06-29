@@ -4,28 +4,34 @@
 
 project:
   name: "Ansible Edge Automation Lab"
-  id: ""            # Short identifier (e.g., "ocp-getting-started")
+  id: "ansible-edge-automation"
   created: "2026-06-29"
-  owner_github: ""  # GitHub username (e.g., "jsmith")
+  owner_github: "stencell"
   owner_email: "nstephan@redhat.com"
-  type: ""          # workshop | demo
-  showroom_type: ""  # classic | zero_touch
+  type: "workshop"
+  showroom_type: "classic"
   deployment_mode: "rhdp_published"
-  autonomy: guided  # guided | assisted | autonomous
+  autonomy: guided
 
 lifecycle:
-  current_phase: intake       # The phase currently being worked on
+  current_phase: intake
   phases:
     intake:
-      status: pending       # pending | in_progress | completed | skipped
-      completed_at: null
-      assignees: []          # GitHub usernames working on this phase
-      artifacts: []
+      status: completed
+      completed_at: "2026-06-29T14:30:00Z"
+      assignees:
+        - "stencell"
+      artifacts:
+        - "publishing-house/spec/design.md"
+        - "publishing-house/spec/modules/module-01-onboarding-edge-devices.md"
+        - "publishing-house/spec/modules/module-02-pushing-configuration.md"
+        - "publishing-house/spec/modules/module-03-deploying-application-updates.md"
+        - "publishing-house/spec/modules/module-04-remediating-security-finding.md"
     vetting:
       status: pending
       completed_at: null
       assignees: []
-      result: null           # approved | revise | rejected
+      result: null
       rcars_response: null
     spec_refinement:
       status: pending
@@ -39,26 +45,41 @@ lifecycle:
     writing:
       status: pending
       assignees: []
-      modules: []            # Populated during intake
-      # Example module entry:
-      # - id: "module-01"
-      #   title: "Module 1: Overview"
-      #   status: pending    # pending | in_progress | drafted | approved
-      #   content_path: null
-      #   review_file: null
-    automation:                      # Automation runs BEFORE editing — content may change
-      status: pending                #   to accommodate infrastructure, so edit once at the end
+      module_relationship: "independent_with_shared_context"
+      modules:
+        - id: "module-01"
+          title: "Onboarding Edge Devices at Scale"
+          status: pending
+          content_path: null
+          review_file: null
+        - id: "module-02"
+          title: "Pushing Configuration to the Fleet"
+          status: pending
+          content_path: null
+          review_file: null
+        - id: "module-03"
+          title: "Deploying Application Updates"
+          status: pending
+          content_path: null
+          review_file: null
+        - id: "module-04"
+          title: "Remediating a Security Finding"
+          status: pending
+          content_path: null
+          review_file: null
+    automation:
+      status: pending
       assignees: []
-      needs_automation: null  # true | false — asked during intake
-      catalog_path: null      # AgnosticV catalog path
-      agv_repo: null          # AgnosticV git repo
-      agv_branch: null        # AgnosticV branch
+      needs_automation: true
+      catalog_path: null
+      agv_repo: null
+      agv_branch: null
       substeps:
-        requirements: pending       # Automation requirements (reviewable scope document)
-        catalog_item: pending       # AgnosticV catalog configuration (skipped for self_published)
-        automation_code: pending    # Ansible collection or GitOps repo
-        testing: pending            # Deploy and verify automation works
-      automation_files: []    # List of automation artifact paths in this repo
+        requirements: pending
+        catalog_item: pending
+        automation_code: pending
+        testing: pending
+      automation_files: []
     editing:
       status: pending
       completed_at: null
