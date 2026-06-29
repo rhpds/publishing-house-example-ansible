@@ -34,10 +34,22 @@ lifecycle:
       result: approved
       rcars_response: "No duplicates found. Related content uses different technologies (Edge Manager vs AAP) or different focus (AI/AIOps vs edge device management). Content gaps identified: AAP credentials management for edge, base inventory setup for edge fleets, EDA controller deployment, fleet-scale update patterns."
     spec_refinement:
-      status: pending
-      completed_at: null
-      assignees: []
-      artifacts: []
+      status: completed
+      completed_at: "2026-06-29T15:30:00Z"
+      assignees:
+        - "stencell"
+      artifacts:
+        - "publishing-house/spec/design.md"
+        - "publishing-house/spec/modules/module-01-onboarding-edge-devices.md"
+        - "publishing-house/spec/modules/module-02-pushing-configuration.md"
+        - "publishing-house/spec/modules/module-03-deploying-application-updates.md"
+        - "publishing-house/spec/modules/module-04-remediating-security-finding.md"
+      changes:
+        - "Added Differentiation section to design.md based on RCARS vetting findings"
+        - "Added credential management coverage to Module 1"
+        - "Fixed module independence — removed cross-module references in prerequisites"
+        - "Added rolling update scaling framing to Module 3"
+        - "Pinned AAP version to 2.5"
     approval:
       status: pending
       approved_by: null

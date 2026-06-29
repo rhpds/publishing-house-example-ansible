@@ -34,19 +34,20 @@ The lab environment provides a pre-deployed AAP controller on OpenShift with two
 
 | Section | Title | Duration |
 |---------|-------|----------|
-| 1       | Exploring the AAP Controller and Inventory | ~5 min |
-| 2       | Organizing Devices with Groups | ~8 min |
-| 3       | Building Smart Inventories | ~7 min |
+| 1       | Exploring the AAP Controller and Edge Credentials | ~7 min |
+| 2       | Organizing Devices with Groups | ~7 min |
+| 3       | Building Smart Inventories | ~6 min |
 
 ## Detailed Steps
 
-### Section 1: Exploring the AAP Controller and Inventory
+### Section 1: Exploring the AAP Controller and Edge Credentials
 
 1. Log in to the AAP controller web UI using the provided credentials
-2. Navigate to the Inventories section and open the pre-populated edge device inventory
-3. Review the two registered hosts ("Store-Portland" and "Store-Austin") and their host variables
-4. Observe the existing inventory structure — note how the devices are listed but not yet organized into operational groups
-5. Verify connectivity to both edge devices by running an ad-hoc ping command from the AAP controller
+2. Navigate to the Credentials section and review the pre-configured machine credential for the edge devices — note the credential type and how AAP authenticates to remote RHEL hosts via SSH
+3. Navigate to the Inventories section and open the pre-populated edge device inventory
+4. Review the two registered hosts ("Store-Portland" and "Store-Austin") and their host variables
+5. Observe the existing inventory structure — note how the devices are listed but not yet organized into operational groups
+6. Verify connectivity to both edge devices by running an ad-hoc ping command from the AAP controller using the edge credential
 
 ### Section 2: Organizing Devices with Groups
 
@@ -68,7 +69,7 @@ The lab environment provides a pre-deployed AAP controller on OpenShift with two
 
 - AAP controller provides centralized visibility and organization for distributed edge device fleets
 - Smart inventories enable dynamic, attribute-based grouping that automatically adapts as the fleet changes
-- Properly organized inventories and device groups are the foundation for pushing configurations, deploying updates, and automating remediation in subsequent modules
+- Properly organized inventories and device groups are the foundation for pushing configurations, deploying updates, and automating remediation across the fleet
 
 ## Infrastructure Notes
 

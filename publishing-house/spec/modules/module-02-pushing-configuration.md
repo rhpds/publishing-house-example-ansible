@@ -9,7 +9,7 @@ The lab environment provides a pre-deployed AAP controller on OpenShift with two
 ## Audience and Time
 
 - **Target personas:** Sysadmins and infrastructure engineers
-- **Prerequisites:** Basic Ansible concepts (playbooks, inventory, roles), Linux system administration, RHEL fundamentals; familiarity with AAP inventory concepts from Module 1
+- **Prerequisites:** Basic Ansible concepts (playbooks, inventory, roles), Linux system administration, RHEL fundamentals; familiarity with AAP inventory and device group concepts
 - **Estimated duration:** ~20 min
 
 ## What You Will See, Learn, and Do
@@ -71,4 +71,4 @@ The lab environment provides a pre-deployed AAP controller on OpenShift with two
 - Job templates provide a repeatable, standardized method for pushing configuration to edge devices at scale
 - Surveys make job templates flexible and reusable without requiring playbook modifications
 - AAP controller tracks job execution history, providing an audit trail of every configuration change pushed to the fleet
-- With organized inventories and job templates in place, the fleet is ready for application updates in the next module
+- With organized inventories and job templates in place, the fleet is ready for application updates and automated remediation

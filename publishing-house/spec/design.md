@@ -26,7 +26,7 @@ Workshop (hands-on)
 
 ## Products & Technologies
 
-- Red Hat Ansible Automation Platform 2.5+
+- Red Hat Ansible Automation Platform 2.5
 - Event-Driven Ansible
 - Red Hat Enterprise Linux 9 (edge devices)
 - Red Hat OpenShift (AAP deployment platform)
@@ -66,3 +66,17 @@ Automation must provision:
 - **Automation approach:** Ansible (AgnosticD roles for OCP + AAP deployment, custom roles for edge VM provisioning and app setup)
 - **Existing workloads to reuse:** AAP deployment roles from AgnosticD (if available), RHEL 9 VM provisioning patterns
 - **New workloads needed:** Edge kiosk application setup, EDA rulebook configuration, sample security finding injection for module 4
+
+## Differentiation
+
+This workshop fills a specific gap in the RHDP catalog identified during vetting:
+
+- **vs. Red Hat Edge Manager labs** — Those labs cover fleet management using Edge Manager (flightctl) with desired-state OS management and GitOps workflows. This workshop uses AAP controller and Event-Driven Ansible as the management layer, focusing on application-level lifecycle operations (configuration, updates, remediation) rather than OS-level image management.
+- **vs. AI-Driven AAP lab** — That lab covers EDA in an AIOps context with AI inference, Splunk integration, and Granite LLM. This workshop keeps EDA grounded in a straightforward edge operations scenario without AI dependencies, making it accessible to sysadmins who want practical EDA skills.
+- **vs. Advanced Features of AAP lab** — That lab covers AAP controller features broadly (CaC, workflows, RBAC). This workshop applies those features to a concrete edge use case with a cohesive scenario, showing how inventories, job templates, and EDA work together for fleet management.
+
+**Unique content gaps this workshop fills:**
+- AAP credential management patterns for edge device authentication
+- Inventory organization strategies (groups + smart inventories) for edge fleets
+- Fleet-scale rolling update orchestration via AAP
+- Event-Driven Ansible for automated security remediation of edge devices

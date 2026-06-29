@@ -9,7 +9,7 @@ The lab environment provides a pre-deployed AAP controller on OpenShift with two
 ## Audience and Time
 
 - **Target personas:** Sysadmins and infrastructure engineers
-- **Prerequisites:** Basic Ansible concepts (playbooks, inventory, roles), Linux system administration, RHEL fundamentals; familiarity with AAP job templates from previous modules
+- **Prerequisites:** Basic Ansible concepts (playbooks, inventory, roles), Linux system administration, RHEL fundamentals; familiarity with AAP job templates and inventory concepts
 - **Estimated duration:** ~25 min
 
 ## What You Will See, Learn, and Do

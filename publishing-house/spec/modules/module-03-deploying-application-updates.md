@@ -9,7 +9,7 @@ The lab environment provides a pre-deployed AAP controller on OpenShift with two
 ## Audience and Time
 
 - **Target personas:** Sysadmins and infrastructure engineers
-- **Prerequisites:** Basic Ansible concepts (playbooks, inventory, roles), Linux system administration, RHEL fundamentals; familiarity with AAP job templates from Module 2
+- **Prerequisites:** Basic Ansible concepts (playbooks, inventory, roles), Linux system administration, RHEL fundamentals; familiarity with AAP job templates and inventory concepts
 - **Estimated duration:** ~25 min
 
 ## What You Will See, Learn, and Do
@@ -74,7 +74,7 @@ The lab environment provides a pre-deployed AAP controller on OpenShift with two
 
 ## Key Takeaways
 
-- Rolling update strategies reduce risk by updating edge devices in controlled batches rather than all at once
+- Rolling update strategies reduce risk by updating edge devices in controlled batches rather than all at once — with 2 devices and `serial: 1`, the lab demonstrates the pattern; in production this scales to hundreds of devices
 - AAP controller provides visibility into update progress across the fleet, showing per-host status throughout the process
 - Failure thresholds prevent a bad update from propagating across the entire fleet
-- With the fleet updated and managed, the next module covers automated remediation when security findings arise
+- In production, these same rolling update patterns scale to hundreds or thousands of edge devices across distributed locations
